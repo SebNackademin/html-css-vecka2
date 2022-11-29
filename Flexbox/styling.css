@@ -1,0 +1,64 @@
+body {
+    text-align: center;
+    font-size: 2em;
+}
+
+#root {
+    display: flex;
+    border: 1px solid black; 
+    width: 600px; 
+    height: 600px;
+    margin: auto;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+header {
+    flex-grow: 1;
+}
+nav {
+    flex-grow: 1;
+}
+main {
+    flex-grow: 3;
+}
+footer {
+    flex-grow: 0.5;
+}
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    flex-grow: 5;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+    #root {
+        width: 100%;
+    }
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}

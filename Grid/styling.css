@@ -1,0 +1,57 @@
+body {
+    text-align: center;
+    font-size: 2em;
+}
+
+#root {
+    border: 1px solid black; 
+    width: 600px; 
+    height: 600px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 150px 450px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "header   header"
+      "nav      main"
+      "footer   footer";
+}
+
+#test {
+    grid-area: hej;
+}
+
+header {
+    grid-area: header;
+}
+nav {
+    grid-area: nav;
+}
+main {
+    grid-area: main;
+}
+footer {
+    grid-area: footer;
+}
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
